@@ -70,6 +70,15 @@ width: 100%;
     text-align: center;
     margin: 0;
 }
+
+.article__card-description::after {
+    content: '💻';
+}
+
+.article__card-description::before {
+    content: '💻';
+}
+
 .footer {
     display: flex;
 }
@@ -95,7 +104,14 @@ width: 100%;
 }
 
 .footer-nav__link {
+    display: flex;
     width: 1.75rem;
+    transition: all 2s;
+}
+
+.footer-nav__link:hover {
+    filter: brightness(150%);
+    transform: scale(1.25) rotate(360deg); 
 }
 
 .footer-nav__link-image {
